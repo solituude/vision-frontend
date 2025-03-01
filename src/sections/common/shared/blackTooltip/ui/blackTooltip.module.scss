@@ -1,0 +1,27 @@
+.tooltip__container {
+  display: flex;
+  flex-direction: column;
+  width: 218px;
+  height: fit-content;
+  gap: 10px;
+  padding: 8.5px 12px 9.5px 12px;
+  border-radius: 8px;
+  background: #2D2D2E;
+}
+
+.tooltip__label {
+  //styleName: System Font/Compact/Subhead · 500 · Medium;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: var(--text-contrast-themed)
+}
+
+
+.tooltip__text {
+  @extend .tooltip__label;
+  font-weight: 400;
+}

@@ -1,0 +1,103 @@
+.card__container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.person__card {
+    width: 100%;
+    max-width: 274px;
+    height: 56px;
+    padding: 0px 16px 0px 16px;
+
+    gap: 10px;
+    border-radius: 12px;
+    border: 2px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0px 0px 2px 0px #00000014;
+    background: #FFF;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.card__name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.buttons_container {
+    display: flex;
+    gap: 8px;
+}
+
+.card__more_buttons {
+    width: 20px;
+    height: 20px;
+}
+
+.buttons_container:nth-last-child(1) {
+    margin-left: auto;
+}
+
+.list__table {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #D7D8D9;
+
+    background: #FFFFFF;
+}
+
+.table__header {
+    height: 40px;
+
+    border-bottom: 0.8px solid #D7D8D9;
+}
+
+.table_header__text {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.004em;
+    text-align: left;
+    color: #818C99;
+}
+
+.header__item {
+    align-items: center;
+    padding: 16px 12px !important;
+}
+
+.toggle::after {
+    display: none !important;
+}
+
+.dropdown__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown__text {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 00;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}

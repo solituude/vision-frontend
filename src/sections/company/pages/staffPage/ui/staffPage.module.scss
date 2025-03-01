@@ -1,0 +1,89 @@
+@import "src/app/app.scss";
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  background: var(--background);
+
+  &::-webkit-scrollbar {  
+      width: 0;
+  }
+}
+
+.main__section {
+  display: flex;
+  padding: 16px 32px 0 32px;
+  overflow: hidden;
+  &::-webkit-scrollbar {  
+    width: 0;
+  }
+}
+
+.staff__table {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-content);
+
+  width: 100%;
+  max-height: calc(100vh - 76px);
+  height: fit-content;
+  border-radius: 12px;
+  border: 1px solid var(--separator-primary);
+}
+
+.staff__header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+  padding: 24px 24px 12px 24px;
+}
+
+.filters__area {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  flex-direction: row;
+  padding: 12px 24px;
+  justify-content: space-between;
+
+  &_right {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.add__button {
+  width: 137px;
+}
+
+.add__text {
+  //styleName: System Font/Compact/Headline 1;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--text-contrast-themed)
+}
+
+.header {
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.table__container {
+  overflow: auto;
+  border-radius: 8px;
+  @extend .scrollbar;
+
+}

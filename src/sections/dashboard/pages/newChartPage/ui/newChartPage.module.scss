@@ -1,0 +1,122 @@
+.main__component {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--background);
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+.chartPage__tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -1%;
+  text-align: center;
+
+  color: var(--text-primary);
+}
+
+.header__label {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: var(--text-primary);
+}
+
+.segmented_control__container {
+  width: 340px;
+}
+
+.save_button__container {
+  display: flex;
+  width: 360px;
+  justify-content: flex-end;
+}
+
+.work__area {
+  display: flex;
+  flex-direction: row;
+  padding: 0 8px 8px;
+  gap: 8px;
+}
+
+.visualizationConfig {
+  &__container {
+    width: 37%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    border-radius: 12px;
+    background-color: var(--background-content);
+  }
+
+  &__section {
+    overflow: scroll;
+  }
+
+  &__tabsContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 0 12px 8px;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 32px;
+    flex-grow: 1;
+    border-radius: 8px;
+
+    &--active {
+      @extend .visualizationConfig__tab;
+      background-color: var(--background-secondary);
+    }
+  }
+
+  &__tabLabel {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--text-secondary);
+
+    &--active {
+      @extend .visualizationConfig__tabLabel;
+      color: var(--text-primary);
+    }
+  }
+}
+
+
+

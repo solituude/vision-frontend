@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--background);
+  min-height: 100vh;
+}
+
+.plans_info__section {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 16px;
+}
+
+.header__text {
+  padding-bottom: 32px;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: var(--text-primary);
+}

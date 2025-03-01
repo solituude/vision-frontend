@@ -1,0 +1,135 @@
+.main__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 200px;
+  background-color: var(--background-content);
+  border-radius: 12px;
+  padding: 4px 0;
+}
+
+.connections__container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.connections__header {
+  display: flex;
+  flex-direction: row;
+
+  height: 30px;
+  padding: 8px 14px 8px 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connections__title {
+  //styleName: System Font/Title 3;
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.connections_expand__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.connections__body {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+
+.connections__text_unavail {
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-subhead);
+
+}
+
+
+.separator {
+  width: 100%;
+  height: 1px;
+  border: 0.5px solid var(--separator-secondary);
+}
+
+.tables__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.tables {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.tables__text_unavail {
+
+}
+
+.used_tables__container {
+  display: flex;
+  justify-items: flex-end;
+  height: 319.5px;
+  width: 100%;
+  padding: 8px;
+}
+
+.used_tables {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 303.5px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+
+  gap: 10px;
+  padding: 12px;
+
+  &__header {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--text-primary);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 251px;
+    gap: 4px;
+  }
+}
+

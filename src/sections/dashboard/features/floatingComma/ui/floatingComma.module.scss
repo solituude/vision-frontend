@@ -1,0 +1,31 @@
+.comma__container {
+  display: flex;
+  height: 48px;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 0;
+
+  gap: 24px;
+}
+
+.comma__label {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  text-wrap: nowrap;
+
+  color: var(--text-primary);
+}
+
+.buttons__container {
+  display: flex;
+  width: 210px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 32px;
+  gap: 12px;
+}
+

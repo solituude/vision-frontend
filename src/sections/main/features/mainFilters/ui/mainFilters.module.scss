@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.owner__dropdown {
+  background: #F2F3F5;
+  height: 36px !important;
+  color: black;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #0000001F;
+  //styleName: System Font/Compact/Text;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+
+  //&:after {
+  //  content: url("../lib/dropdownIcon.svg")
+  //}
+
+  &:active,
+  &:hover,
+  &:focus-visible {
+    background-color: #F2F3F5 !important;
+    color: black !important;
+    border: 1px solid #0000001F !important;
+  }
+}
+
+.count_page__text {
+  //styleName: System Font/Compact/Text;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+  color: var(--text-secondary);
+}
+
+hr {
+  margin: 4px 0;
+}
+
+.ownerLabel {
+  display: flex;
+  align-items: center;
+}
+
+.ownerIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.owner__initials {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+}
+
+.owner__name {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.owner__email {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #818C99;
+}
+
+.form_check {
+  align-items: center !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+.button__area {
+  cursor: pointer;
+}
+
+.dropdown__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown__text {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 00;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: left;
+
+}
+
+.input__container {
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  background: #F2F3F5;
+  border: 1px solid #0000001F;
+  border-radius: 8px;
+  align-items: center;
+  padding: 6px;
+  gap: 6px;
+  margin: 0px 8px;
+}
+
+.input__area {
+  display: flex;
+  width: 100%;
+  background: none;
+  border: none;
+
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+  color: var(--text-primary);
+
+  &:focus-visible {
+    border: none !important;
+    outline: none;
+  }
+}

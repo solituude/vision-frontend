@@ -1,0 +1,140 @@
+.btn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 4px;
+
+    border-radius: 8px;
+
+    height: 100%;
+    width: fit-content;
+
+    &__tiny {
+        height: 32px;
+    }
+    &__small {
+        height: 36px;
+    }
+    &__medium {
+        height: 40px;
+    }
+    &__big {
+        height: 44px;
+    }
+
+
+    &__primary {
+        @extend .btn;
+        background: #2688eb;
+
+        transition: 0.2s;
+
+        &:hover {
+            background-color: var(--background-accent-themed-hover);
+            transition: 0.2s;
+        }
+        &:active {
+            background-color: var(--background-accent-themed-active);
+        }
+    }
+
+    &__secondary {
+        @extend .btn;
+        background: var(--background-secondary-alpha);
+
+        transition: 0.2s;
+        &:hover {
+            background: var(--background-secondary-alpha-hover);
+            transition: 0.2s;
+        }
+        &:active {
+            background: var(--background-secondary-alpha-active);
+        }
+
+    }
+
+    &__negative {
+        @extend .btn;
+        background: var(--background-negative);
+
+        transition: 0.2s;
+        &:hover {
+            background: var(--background-negative-hover);
+            transition: 0.2s;
+        }
+        &:active {
+            background: var(--background-negative-active);
+        }
+
+        &_secondary {
+            @extend .btn;
+            background-color: var(--background-secondary-alpha);
+            transition: 0.2s;
+            &:hover {
+                background: var(--background-secondary-alpha-hover);
+                transition: 0.2s;
+            }
+            &:active {
+                background: var(--background-secondary-alpha-active);
+            }
+        }
+    }
+}
+
+
+
+.label {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    text-align: center;
+    text-wrap: nowrap;
+
+    letter-spacing: -0.01em;
+
+    &__primary, &__negative {
+        @extend .label;
+        color: var(--text-contrast-themed);
+    }
+
+    &__secondary {
+        @extend .label;
+        color: var(--text-accent-themed);
+    }
+
+    &__negative_secondary {
+        @extend .label;
+        color: var(--text-negative)
+    }
+
+}
+
+button:disabled {
+    opacity: 50%;
+}
+
+.icon {
+    &__tiny {
+        width: 24px;
+        height: 24px;
+    }
+    //&__small {
+    //    width: 16px;
+    //    height: 16px;
+    //}
+
+    &__medium {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__big {
+        @extend .icon__medium;
+    }
+}

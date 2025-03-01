@@ -1,0 +1,257 @@
+@import "src/app/app.scss";
+.plans_card__container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 64px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 271px;
+  min-width: calc(25% - 20px);
+  height: 522px;
+  padding: 16px;
+
+  background: var(--background-content);
+  border: 1px solid var(--background-content);
+  border-radius: 12px;
+
+
+  &_active {
+    @extend .card;
+    border: 1px solid var(--stroke-accent);
+    box-shadow: 0 4px 16px 0 #00000014;
+  }
+}
+
+.plan__name {
+  padding: 0 0 32px 0;
+  //styleName: System Font/Title 2 · 400 · Regular;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.price__container {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.price {
+  //styleName: System Font/Title 1;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  //text-align: center;
+}
+
+.per_month__text {
+  //styleName: System Font/Title 2;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text-secondary)
+}
+
+.sale__text {
+  //styleName: System Font/Subhead · 600 ·  Semibold;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: var(--text-positive);
+}
+
+p {
+  margin: 0;
+}
+
+.plan__button {
+  display: flex;
+  margin: 16px 0;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: var(--background-accent-themed);
+  &:disabled {
+    opacity: 64%;
+  }
+
+  &_current {
+    @extend .plan__button;
+    background: var(--background-secondary-alpha);
+  }
+
+}
+
+.plan_btn__text {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--text-contrast-themed);
+
+  &_current {
+    @extend .plan_btn__text;
+    color: var(--text-accent-themed);
+  }
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  //padding: 28px 24px 36px 24px;
+}
+
+.feature__content {
+  padding: 12px 8px 20px 8px;
+}
+
+.change_plan__container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 20px;
+}
+
+.features__text_regular {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: var(--text-primary);
+  max-height: 20px;
+  text-overflow: unset;
+  @media (max-width: 1250px) {
+    //font-size: 14px;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  height: 232px;
+  overflow: auto;
+  gap: 24px;
+  @extend .scrollbar;
+}
+
+.features__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.features__label {
+  //styleName: System Font/Headline 1;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+
+  color: var(--text-primary);
+}
+
+.point__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.point__container {
+  display: flex;
+  min-height: 38px;
+  max-height: fit-content;
+  padding: 9px 0;
+  gap: 8px;
+}
+
+.overlay__text {
+  //styleName: System Font/Compact/Subhead;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: var(--text-contrast-themed);
+}
+
+.background__modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+
+
+.modal__content {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.footer__container {
+  display: flex;
+  //height: 69px;
+  width: 100%;
+  //padding: 16px 12px;
+  //border-top: 1px solid var(--separator-primary-alpha);
+}
+
+.footer__button {
+  display: flex;
+  width: 320px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  //width: 100%;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--background-accent-themed);
+  border: none;
+}
+
+.footer__text {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--text-contrast-themed)
+}
+
+.button__container {
+  display: flex;
+  height: 40px;
+  margin: 16px 0;
+}

@@ -1,0 +1,117 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.row__container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.row__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.input__container {
+  display: flex;
+  width: 100%;
+  height: 36px;
+  border: 1px solid #0000001F;
+  border-radius: 8px;
+  background: #F2F3F5;
+  padding: 8px 12px;
+
+  //styleName: System Font/Compact/Text;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+  color: var(--text-secondary)
+}
+
+.label__text {
+  //styleName: System Font/Compact/Subhead;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: #6D7885
+}
+
+input:focus-visible {
+    outline: none ;
+}
+
+.role__dropdown {
+  background: #F2F3F5;
+  height: 36px !important;
+  width: 100%;
+  color: var(--text-secondary) !important;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #0000001F;
+  //styleName: System Font/Compact/Text;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+
+  //&:after {
+  //  content: url("../lib/dropdownIcon.svg")
+  //}
+
+  &:active, &:hover, &:focus-visible {
+    background-color: #F2F3F5 !important;
+    color: var(--text-secondary)!important;
+    border: 1px solid #0000001F !important;
+  }
+}
+
+.error_text {
+  //styleName: System Font/Footnote;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #E64646;
+}
+
+.check__text {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+}
+
+.delete__container {
+  display: flex;
+  width: 24px;
+  height: 56px;
+  align-items: flex-end;
+}
+
+.delete__button {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  padding: 0;
+}

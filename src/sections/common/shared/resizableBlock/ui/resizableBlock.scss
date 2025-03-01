@@ -1,0 +1,42 @@
+
+.react-resizable-handle {
+  background-color: rgba(204, 204, 204, 0);
+  border-radius: 2px;
+  transition: 0.3s;
+  background-image: none;
+
+  &:hover {
+    background-color: var(--separator-primary);
+    transition: 0.3s;
+  }
+}
+
+.react-resizable-handle-n {
+  width: calc(100% - 18px) !important;
+  height: 6px !important;
+  transform: none !important;
+  background-image: none !important;
+  cursor: row-resize;
+  left: 18px!important;
+  top: -7px !important;
+}
+
+.react-resizable-handle-w {
+  width: 6px !important;
+  height: calc(100% - 18px) !important;
+  transform: none !important;
+  background-image: none !important;
+  cursor: col-resize;
+  right: -7px!important;
+  top: 18px !important;
+}
+
+.react-resizable-handle-e {
+  width: 6px !important;
+  height: calc(100% - 18px) !important;
+  transform: none !important;
+  background-image: none !important;
+  cursor: col-resize;
+  right: 7px!important;
+  top: 18px !important;
+}

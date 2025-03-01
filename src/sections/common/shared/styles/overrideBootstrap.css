@@ -1,0 +1,21 @@
+a.dropdown-item {
+    height: 38px !important;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    border-radius: 8px;
+    /*width: fit-content !important;*/
+}
+
+.dropdown-menu{
+    box-shadow: 0 4px 16px 0 #00000014;
+    border: none;
+    width: fit-content ;
+}
+
+.form-check {
+    width: fit-content;
+}
+
+.dropdown-item:active {
+    background: none;
+}

@@ -1,0 +1,1 @@
+export { OBJECTS_INFO } from './constants'

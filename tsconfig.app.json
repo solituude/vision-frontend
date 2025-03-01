@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "baseUrl": "src",
+    "paths": {
+      "app/*": ["app/*"],
+      "auth/*": ["sections/auth/*"],
+      "common/*": ["sections/common/*"],
+      "company/*": ["sections/company/*"],
+      "connections/*": ["sections/connections/*"],
+      "dashboard/*": ["sections/dashboard/*"],
+      "datasets/*": ["sections/datasets/*"],
+      "main/*": ["sections/main/*"],
+      "notifications/*": ["sections/notifications/*"],
+      "settings/*": ["sections/settings/*"],
+      "support/*": ["sections/support/*"]
+    },
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "noImplicitAny": false,
+    "allowJs": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+  },
+  "include": ["src"]
+}

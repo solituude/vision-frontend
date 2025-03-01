@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 52px !important;
+  width: 100%;
+}
+
+.button__container {
+  width: 44px;
+  height: 60px;
+}
+
+.img {
+  padding: 12px;
+}
+
+.label__text {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+
+  color: var(--text-primary);
+}

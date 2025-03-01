@@ -1,0 +1,90 @@
+.main__content {
+  padding: 24px 24px 12px;
+}
+
+.footer__container {
+  display: flex;
+  //height: 69px;
+  width: 100%;
+  padding: 16px 12px;
+  border-top: 1px solid var(--separator-primary-alpha);
+}
+
+.footer__button {
+  display: flex;
+  width: 420px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  //width: 100%;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--background-accent-themed);
+  border: none;
+}
+
+.footer__text {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--text-contrast-themed)
+}
+
+.input__container {
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  background: #F2F3F5;
+  border: 1px solid #0000001F;
+  border-radius: 8px;
+  align-items: center;
+  padding: 6px;
+  gap: 6px;
+}
+
+.input__area {
+  display: flex;
+  width: 100%;
+  min-width: 420px;
+  background: none;
+  border: none;
+
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+  color: var(--text-primary);
+
+  &:focus-visible {
+    border: none !important;
+    outline: none;
+  }
+}
+
+.button {
+  width: 100%;
+  min-width: 420px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+  background: #2688EB;
+  border: 0;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button__text {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+}

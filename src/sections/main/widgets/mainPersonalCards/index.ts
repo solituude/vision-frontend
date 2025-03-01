@@ -1,0 +1,1 @@
+export { MainPersonCard } from './ui/mainPersonCard';

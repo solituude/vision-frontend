@@ -1,0 +1,66 @@
+.main__container {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  width: 360px;
+  height: fit-content;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+
+  border: 0.33px solid var(--image-border-alpha);
+  background-color: var(--background-negative-tint);
+
+  animation: appearance 0.2s ;
+
+  &_close {
+    @extend .main__container;
+    animation: delete 0.3s ;
+    transition: 1s;
+  }
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes delete {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.info__container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+
+}
+
+
+.error__text {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: var(--text-primary)
+}
+
+button {
+  padding: 0;
+}

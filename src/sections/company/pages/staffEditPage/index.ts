@@ -1,0 +1,1 @@
+export {StaffEditPage} from './ui/staffEditPage';

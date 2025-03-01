@@ -1,0 +1,40 @@
+.select__button {
+  width: 210px;
+}
+
+hr {
+  margin: 1px 0;
+}
+
+.dropdown__container {
+  display: flex;
+  flex-direction: column;
+  width: 211px;
+  height: fit-content;
+  margin-top: 2px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  padding: 4px 0;
+  border-radius:  12px;
+  box-shadow: 0 4px 16px 0 #00000014;
+}
+
+.dropdown__item {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.dropdown__label {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+
+  cursor: pointer;
+}

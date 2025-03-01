@@ -1,0 +1,29 @@
+.input__container {
+  display: flex;
+  padding: 8px 12px;
+  width: 100%;
+  background-color: var(--field-background);
+  border-radius: 8px;
+  border: 0.5px solid var(--field-border-alpha);
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+  color: var(--text-primary);
+  &:focus {
+    border: 0.5px solid var(--stroke-accent);
+    caret-color: var(--stroke-accent);
+
+  }
+  &_small {
+    @extend .input__container;
+    height: 36px;
+  }
+
+  &_regular {
+    @extend .input__container;
+    height: 44px;
+  }
+}

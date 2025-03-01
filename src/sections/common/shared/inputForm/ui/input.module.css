@@ -1,0 +1,26 @@
+.textarea {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* max-width: 280px; */
+    height: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+ 
+    letter-spacing: -0.007em;
+    
+    /* color: #818C99 !important; */
+    /* color: var(--color-auth-text) !important; */
+}
+
+.show_password {
+    cursor: pointer;
+}
+

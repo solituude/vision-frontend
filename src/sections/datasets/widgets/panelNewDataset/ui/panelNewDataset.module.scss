@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  height: 44px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.btn__container {
+  width: 32px;
+}
+
+.left__part {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.count_col__text {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+  text-wrap: nowrap;
+
+  color: var(--text-primary);
+}
+
+.count_row__container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 293px;
+  align-items: center;
+}
+
+.max_row__text {
+  @extend .count_col__text;
+  color: var(--text-secondary);
+}

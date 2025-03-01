@@ -1,0 +1,1 @@
+export {TrendLineFolder} from './ui/trendLineFolder';

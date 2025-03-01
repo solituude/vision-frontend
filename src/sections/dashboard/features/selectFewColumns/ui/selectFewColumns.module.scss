@@ -1,0 +1,15 @@
+@import "src/app/app";
+.dropdown {
+  @extend .scrollbar;
+  position: absolute;
+
+  max-height: 500px;
+  overflow-y: scroll;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 16px 0 #00000014;
+  padding: 8px 12px;
+
+  background-color: var(--background-content);
+  z-index: 2;
+}

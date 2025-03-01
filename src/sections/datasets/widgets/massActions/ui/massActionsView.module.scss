@@ -1,0 +1,97 @@
+
+.mass_actions_view__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--background-content);
+  border-radius: 12px;
+}
+
+.mass_actions_view__header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid var(--separator-primary);
+}
+
+.choice_col__text {
+  width: 180px;
+}
+
+.header__title {
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.panel__container {
+  display: flex;
+  height: 52px;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  padding: 8px 12px;
+  gap: 20px;
+  border-bottom: 1px solid var(--separator-primary);
+}
+
+.buttons__container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.columnInfo__container {
+  overflow: auto;
+  width: 100%;
+}
+
+.columnInfo__table {
+  width: 100%;
+}
+
+.columnInfo__item {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.checkbox__column {
+  width: 36px;
+  height: 40px;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--separator-primary-alpha);
+}
+
+.name__column {
+  @extend .checkbox__column;
+  width: calc((100% - 242px) * 200 / 786);
+}
+
+.type__column {
+  @extend .checkbox__column;
+  width: 170px;
+}
+
+.info__column {
+  @extend .checkbox__column;
+  width: calc((100% - 242px) * 293 / 786);
+}
+
+.visible__button {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+tr:hover .visible__button {
+  opacity: 1;
+  transition: 0.2s;
+}

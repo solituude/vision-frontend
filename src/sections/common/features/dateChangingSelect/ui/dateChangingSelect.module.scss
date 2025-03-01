@@ -1,0 +1,84 @@
+.dropdown__button {
+  width: 170px;
+}
+
+.dropdown__container {
+  display: flex;
+  flex-direction: row;
+  min-width: 300px;
+  height: 272px;
+  padding: 12px;
+  border-radius:  12px;
+  box-shadow: 0 4px 16px 0 #00000014;
+  margin-top: 2px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+}
+
+.dropdown__text {
+  //styleName: System Font/Compact/Headline 1 · 400 · Regular;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: left;
+
+}
+
+
+.dropdown__list {
+  display: flex;
+  width: 276px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dropdown__item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 38px;
+  align-items: center;
+  border-radius: 8px;
+
+  &:active, &:hover, &:focus-visible {
+    background-color: var(--background-secondary);
+  }
+}
+
+.separator {
+  width: 1px;
+  background-color: var(--separator-primary);
+  height: 272px;
+  margin: -12px 12px 12px 12px;
+}
+
+.select__container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 4px;
+}
+
+.calendar__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.calendar__item {
+  display: flex;
+  width: 176px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #0000001F;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+

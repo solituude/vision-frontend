@@ -1,0 +1,164 @@
+@import "src/app/app.scss";
+._content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 740px;
+  height: fit-content;
+  gap: 12px;
+}
+
+.dropdown__button {
+  width: 125px;
+}
+
+.actions__container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.add__button {
+  display: flex;
+  width: 109px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-accent-themed);
+  border-radius: 8px;
+
+}
+
+.input__container {
+  display: flex;
+  justify-content: space-between;
+  width: 442px;
+  height: 36px;
+  padding: 4px;
+  gap: 4px;
+  //padding: 8px 12px;
+  border-radius: 8px;
+  border: 0.5px solid var(--field-border-alpha);
+  background-color: var(--field-background);
+  overflow: auto;
+  @extend .scrollbar;
+  scrollbar-width: none;
+}
+
+.input {
+  height: 28px;
+  width: 100%;
+  min-width: 200px;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+
+  //styleName: System Font/Compact/Text;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.007em;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.add__text {
+  //styleName: System Font/Compact/Headline 1;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--text-contrast-themed);
+}
+
+.bubble__container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: 28px;
+  padding: 5px 6px;
+  gap: 6px;
+  border-radius: 6px;
+  align-items: center;
+
+  background-color: var(--background-content);
+  border: 0.5px solid var(--image-border-alpha);
+
+}
+
+.bubble__user {
+  //styleName: System Font/Footnote;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  text-wrap: nowrap;
+  color: var(--text-primary);
+}
+
+.delete__bubble {
+  display: flex;;
+  height: 16px;
+}
+
+.staff__searching {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.staff_list__container {
+  display: flex;
+  position: absolute;
+  width: 442px;
+  margin-top: 40px;
+  max-height: 184px;
+  overflow: auto;
+  flex-direction: column;
+  padding: 8px 12px;
+  gap: 8px;
+  border-radius: 12px;
+
+  background-color: var(--background-content);
+  box-shadow: 0 4px 16px 0 #00000014;
+
+  @extend .scrollbar;
+
+}
+
+.dropdown__list {
+  margin-top: 36px;
+}
+
+.contributors__container {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  max-height: 200px;
+  overflow: auto;
+  @extend .scrollbar;
+}
+
+.contributor__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.role {
+  //styleName: System Font/Compact/Headline 1 · 400 · Regular;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: right;
+  color: var(--icon-primary);
+}

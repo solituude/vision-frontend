@@ -1,0 +1,67 @@
+.container_checkbox {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    // padding: 0 16px;
+    gap: 12px;
+
+    max-width: 360px;
+    height: 36px;
+
+    border-radius: 10px;
+    //font-family: Roboto, sans-serif;
+    //font-size: 15px;
+    //font-weight: 400;
+    //line-height: 20px;
+    //
+    //color: var(--text-primary);
+
+    flex: none;
+    flex-grow: 0;
+}
+
+.custom_checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+.custom_checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom_checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-grow: 0;
+    border: 1px solid var(--icon-accent);
+    border-radius: 6px;
+    margin-right: 14px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.custom_checkbox:checked+label::before {
+    border: 1px solid var(--icon-accent);
+    background-image: url('../../../../common/shared/lib/icons/checkboxIcon.svg');
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox__label {
+    //styleName: System Font/Compact/Text;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.007em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: var(--text-primary);
+}

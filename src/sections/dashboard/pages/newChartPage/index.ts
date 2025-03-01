@@ -1,0 +1,1 @@
+export {NewChartPage} from './ui/newChartPage';

@@ -1,0 +1,70 @@
+.filters__button_container {
+    width: 96px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border: 0.5px solid #0000001F;
+    overflow: hidden;
+    /* Скрытие выступающих элементов */
+    position: relative;
+    /* Для корректного позиционирования разделителя */
+}
+
+.objects_filters__container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 80px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon__active {
+    filter: invert(54%) sepia(42%) saturate(2747%) hue-rotate(186deg) brightness(96%) contrast(100%);
+
+}
+
+.icon__disactive {
+    filter: invert(76%) sepia(5%) saturate(13%) hue-rotate(174deg) brightness(92%) contrast(84%);
+}
+
+.button__active {
+    background: #F2F3F5;
+
+}
+
+.button__disactive {
+    background: #FFF;
+}
+
+.button {
+    width: 48px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0;
+    gap: 10px;
+    position: relative;
+}
+
+.divider {
+    width: 1px;
+    height: 36px;
+    border-left: 1px solid #0000001F;
+    margin: auto 0;
+}
+
+.text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+}
